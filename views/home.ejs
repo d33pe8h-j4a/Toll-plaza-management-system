@@ -1,0 +1,89 @@
+<%- include('partials/header'); -%>
+    <section id="title">
+        <div class="container">
+            <div class="row flex-lg align-items-center">
+                <div class="col-lg-6">
+                    <div class="heading-column">
+                        <h1 class="big-heading">Going somewhere? Pay the toll, Let's roll.</h1>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img class="toll-plaza-image" src="/images/toll.jpg" alt="toll-plaza-image">
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr class="dotted">
+    <section class="calculate center">
+        <div class="container">
+            <!-- <div class="row flex-lg align-items-center"> -->
+            <!-- <div class="col-lg-6"> -->
+            <form action="/" method="post">
+                <span class="calculate-title">Count Tolls in your Journey</span>
+                <div class="form-group wrap-input">
+                    <input type="text" class="form-control form-input" placeholder="From">
+                    <span class="focus-input"></span>
+                    <span class="symbol-input">
+                        <i class="fa-solid fa-location-arrow"></i>
+                    </span>
+                </div>
+                <div class="form-group wrap-input">
+                    <input type="text" class="form-control form-input" placeholder="To">
+                    <span class="focus-input"></span>
+                    <span class="symbol-input">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </span>
+                </div>
+                <div class="wrap-input">
+                    <select class="form-input">
+                        <option selected>Vehicle Class...</option>
+                        <option value="1">Heavy Vehicle</option>
+                        <option value="2">Light Vehicle</option>
+                        <option value="3">Two Wheelers</option>
+                    </select>
+                    <span class="focus-input"></span>
+                    <span class="symbol-input">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </span>
+                </div>
+                <div class="cal-btn">
+                    <button type="submit" class="btn btn-primary btn-lg btn-block cal-btn">Calculate</button>
+                </div>
+            </form>
+            <!-- </div> -->
+            <!-- </div> -->
+        </div>
+    </section>
+    <hr class="dotted">
+    <section id="features" class="center">
+            <div class="features-box">
+                <div class="feature-box">
+                    <img src="/images/traffic-control.jpg" alt="traffic-control" class="traffic-img">
+                    <div class="feature-content">
+                        <h3 class="feature-title">Reduce traffic congestion</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, maxime.</p>
+                    </div>
+                </div>
+                
+                <div class="feature-box">
+                    <img src="/images/transport.jpg" alt="traffic-control">
+                    <div class="feature-content">
+                        <h3 class="feature-title">Raise revenue for transportation projects</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga.</p>
+                    </div>
+                </div>
+                
+                <div class="feature-box">
+                    <img src="/images/safety.jpg" alt="traffic-control">
+                    <div class="feature-content">
+                        <h3 class="feature-title">Improve safety</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati, voluptatibus necessitatibus.</p>
+                    </div>
+                </div>
+            </div>
+
+    
+
+      </section>
+
+    <%- include('partials/footer'); -%>

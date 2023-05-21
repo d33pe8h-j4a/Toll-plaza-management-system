@@ -1,0 +1,14 @@
+body {
+    background-color: #aec3c7;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container section */
+.container {
+    background-color: white;
+    border-radius: 20px;
+    margin: 40px auto;
+    padding: 20px;
+}
