@@ -1,20 +1,19 @@
 <%- include('partials/signup-header'); -%>
     <nav>
         <div class="brand-name">
-            <!-- <h4>Toll Plaza Management System</h4> -->
             <a href="/"><i class="fa-solid fa-house"></i></a>
         </div>
         <div class="staff-signup">
             <% let link = ""; %>
             <% if (user.may === 'admin') { %>
                 <p>Not an <%= user.may %>?</p> %>
-                <% link = '/customer/signup' %>
+                <% link = '/customer/login' %>
             <% } else { %>
                 <p>Not a <%= user.may %>?</p>
-                <% link = '/' + user.maynot + '/signup' %>
+                <% link = '/' + user.maynot + '/login' %>
             <% } %>
             <button onclick="window.location.href= '<%= link %>';" class="button-33" role="button" type="submit"><%= user.maynotCapital %>
-                Signup</button>
+                Login</button>
         </div>
     </nav>
     <div class="container">
@@ -22,8 +21,8 @@
             <div class="col-lg-6">
                 <div class="banner">
                     <div class="box">
-                        <h2>Let us get you signed up.</h2>
-                        <p>Our registeration process is quick and easy, taking no more than 10 minutes to complete.</p>
+                        <h2>Let us get you logged in.</h2>
+                        <p>Our registeration process is quick and easy, taking no more than a minute to complete.</p>
                     </div>
                     <div class="testimonial">
                         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -74,9 +73,9 @@
             <div class="col-lg-6">
                 <section class="login">
                     <div class="container">
-                        <h2><%= user.mayCapital %> Sign Up</h2>
+                        <h2><%= user.mayCapital %> Login</h2>
                         <p>Create your account below</p>
-                        <form action="/signup" method="post">
+                        <form action="/login" method="post">
                             <div class="form-group wrap-input">
                                 <input type="email" name="username" class="form-control form-input" placeholder="Email">
                                 <span class="focus-input"></span>
@@ -93,9 +92,14 @@
                                 </span>
                             </div>
 
-                            <button type="submit" class="button-64" name="userType" role="button" value="<%= user.may %>"><span class="text">Sign Up</span></button>
-                            <% const loginLink = '/' + user.may + '/login'; %>
-                            <p class="forgot-email">Have an account? <a href="<%= loginLink %>">Login</a></p>
+                            <button type="submit" class="button-64" name="userType" role="button" value="<%= user.may %>"><span class="text">Log In</span></button>
+                            <% let signupLink = ""; %>
+                            <% if (user.may === 'admin') { %>
+                                <% signupLink = '/signup/' + user.may; %>
+                            <% } else { %>
+                                <% signupLink = '/' + user.may + '/signup'; %>
+                            <% } %>
+                            <p class="forgot-email">Don't have an account? <a href="<%= signupLink %>">Sign Up</a></p>
                         </form>
                     </div>
                 </section>

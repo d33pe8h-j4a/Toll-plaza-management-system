@@ -1,0 +1,117 @@
+<%- include('partials/signup-header'); -%>
+  <section id="vehicle-form">
+    <form action="/add-vehicle" method="post">
+      <div class="form-container row">
+        <div class="col">
+          <h2>Vehicle Information</h2>
+          <p>Add Your Vehicle Details Here</p>
+          <div class="vehicle-class">
+            Select Vehicle Class
+          </div>
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-interval="false">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block"
+                  src="https://cdn2.hondacarindia.com/models/carModelImage/hondeCityEhev/eHEV-Desktop.png" alt="car">
+                <p class="categ">
+                  <input type="radio" vehicleType" id="car" value="car">
+                  CAR
+                </p>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block" src="/images/tata-ace.png" alt="tata-ace">
+                <p class="categ">
+                  <input type="radio" name="vehicleType" id="tata-ace" value="tata-ace">
+                  TATA ACE
+                </p>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block" src="/images/bus.png" alt="bus">
+                <p class="categ">
+                  <input type="radio" vehicleType" id="bus" value="bus">
+                  BUS
+                </p>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block"
+                  src="https://tatatrucks.tatamotors.com/images/tata-heavy-medium-trucks/tata-increased-axle-load-range/tata-lpt-signa-2818/overview-tata-lpt-signa-2818.png"
+                  alt="truck-3axel">
+                <p class="categ">
+                  <input type="radio" name="vehicleType" id="truck-3axel" value="truck-3axel">
+                  TRUCK 3-AXEL
+                </p>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block"
+                  src="https://tatatrucks.tatamotors.com/images/tata-heavy-medium-trucks/tata-increased-axle-load-range/tata-signa-4925t-trucks/overview-SIGNA%204925.T.png"
+                  alt="truck-6axel">
+                <p class="categ">
+                  <input type="radio" name="vehicleType" id="truck-6axel" value="truck-6axel">
+                  TRUCK 6-AXEL
+                </p>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block" src="/images/oversized-vehicle.png" alt="oversized-vehicle">
+                <p class="categ">
+                  <input type="radio" name="vehicleType" id="oversized-vehicle" value="oversized-vehicle">
+                  OVERSIZED VEHICLE
+                </p>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+        </div>
+        <div class="col">
+          <div class="row g-3 vehicle-details">
+            <div class="col-md-6 form-input-item">
+              <label for="regno" class="form-label">Registeration no.</label>
+              <input id="regno" type="text" name="regno" list="defaultNumbers" class="form-control"
+                placeholder="Registeration number">
+              <span class="validity"></span>
+              <datalist id="defaultNumbers">
+                <option value="231231"></option>
+              </datalist>
+            </div>
+
+            <div class="col-md-6 form-input-item">
+              <label for="passID" class="form-label">Pass ID</label>
+              <input type="text" name="passID" id="passID" class="form-control" placeholder="e.g., 123334">
+            </div>
+
+            <div class="col-12 form-input-item">
+              <label for="chassis-number">Chassis Number</label>
+              <input type="text" name="chassisNumber" id="chassis-number" class="form-control"
+                placeholder="e.g., 23123123123123123">
+            </div>
+
+            <div class="col-md-6 form-input-item">
+              <label for="regn-year">Registeration Year</label>
+              <input type="text" name="regnYear" class="form-control" placeholder="e.g., 2001">
+            </div>
+
+            <div class="col-md-6 form-input-item">
+              <label for="vehicle-color">Vehicle Color</label>
+              <input type="color" name="vehicleColor" id="vehicle-color" class="form-control"
+                placeholder="Select Your Vehicle color">
+            </div>
+
+
+            <button type="submit" class="button-64"><span
+                class="text">SUBMIT</span></button>
+          </div>
+
+        </div>
+      </div>
+    </form>
+  </section>
+  <%- include('partials/footer'); -%>

@@ -5,39 +5,37 @@
     <meta charset="utf-8">
     <title>Daily Journal</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/footerstyle.css">
+    <link rel="stylesheet" href="/css/profile.css">
+    <link rel="stylesheet" href="/css/add-staff.css">
+    <link rel="stylesheet" href="/css/popup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Courgette&family=Kanit&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Pacifico&family=Paytone+One&family=Philosopher:wght@700&family=Ubuntu:wght@300;400;500;700&family=Yatra+One&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/e02bf820cf.js" crossorigin="anonymous"></script>
 
-    <nav class="navbar navbar-expand-custom navbar-mainbg">
-        <a class="navbar-brand navbar-logo" href="#" style="color: black; text-decoration: double;">Toll Plaza Management System</a>
-        <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <i class="fas fa-bars text-white"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <div class="hori-selector">
-                    <div class="left"></div>
-                    <div class="right"></div>
-                </div>
-                <li class="nav-item active">
-                    <a class="nav-link" href="/" style="color: black; text-decoration: double;"><i class="fas fa-tachometer-alt"></i>Dashboard</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="/about" style="color: black; text-decoration: double;"><i class="far fa-address-book"></i>About Us</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="/services" style="color: black; text-decoration: double;"><i class="far fa-clone"></i>Services</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="/signup" style="color: black; text-decoration: double;"><i class="far fa-copy"></i>Sign Up</a>
-                </li>
+    <nav class="stroke">
+        <div class="left-navbar">
+            <ul>
+                <li><a href="/about">About</a></li>
+                <li><a href="/login/admin">For Admin</a></li>
             </ul>
+        </div>
+        <div class="brand">
+            <a href="/">Toll Plaza Management System</a>
+        </div>
+        <div class="right-navbar">
+            <ul>
+                <li><a href="/services">Services</a></li>
+            </ul>
+            <button onclick = "window.location.href='/customer/signup';" class="button-71 signup">Get Started</button>
         </div>
     </nav>
 
 <body class="gradient-background">
-    <div class="container">
-        
+    

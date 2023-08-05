@@ -1,14 +1,114 @@
-body {
-    background-color: #aec3c7;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.brand-name {
+  font-weight: bold;
+  position: relative;
+  right: 321px;
+	/* width: 30%; */
 }
 
-/* Container section */
-.container {
-    background-color: white;
-    border-radius: 20px;
-    margin: 40px auto;
-    padding: 20px;
+.brand-name h4 {
+  font-size: 1.5rem;
+	font-family: 'Philosopher', sans-serif;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.brand-name a {
+  color: #DAFFFB; 
+	text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.brand-name a:hover {
+	color: #176B87;
+}
+
+
+
+.staff-signup {
+  position: relative;
+  left: 360px;
+}
+
+.staff-signup p, button{
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.staff-signup p {
+  color: #DAFFFB;
+}
+
+/* CSS */
+.button-33 {
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-33:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+
+.button-64 {
+  align-items: center;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 35px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  width: 100%;
+  /* max-width: 100%;
+  min-width: 140px; */
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.button-64:active,
+.button-64:hover {
+  outline: 0;
+}
+
+.button-64 span {
+  background-color: #48486a;
+  padding: 16px 24px;
+  border-radius: 35px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.button-64:hover span {
+  background: none;
+}
+
+@media (min-width: 768px) {
+  .button-64 {
+    font-size: 24px;
+    min-width: 196px;
+  }
 }
