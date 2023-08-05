@@ -520,10 +520,6 @@ a:not([href]):not([tabindex]) {
 }
 
 
-
-
-
-
 /* utility classes */
 .center {
 	text-align: center;

@@ -1,0 +1,61 @@
+.btn{
+    display: inline-block;
+    border: none;
+    background: var(--dark-color);
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+}
+
+/* Footer */
+footer #main-footer{
+    position: sticky;
+    bottom:0;
+}
+#main-footer{
+    background:#1258a3;
+    color: #ffffff;
+    padding: 2rem 0;
+}
+
+#main-footer img{
+    width: 150px;
+}
+#main-footer a{
+    color: #ffffff;
+}
+
+#main-footer .footer-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1.5rem;
+}
+
+#main-footer .footer-container > *:last-child{
+    background: #1258a3;
+    grid-column: 1/span 4;
+    text-align: center;
+    padding: .5rem;
+    font-size: 0.75rem;
+}
+#main-footer .footer-container input[type='email']{
+    width: 90%;
+    padding: 0.5rem;
+    margin-bottom: .5rem;
+}
+#main-footer .footer-container input[type='submit']{
+    width: 90%;
+    color: rgb(255, 250, 250);
+}
+
+#main-footer .footer-container input[type='submit']:hover{
+    background: linear-gradient(to right, #ff6e7f 0%, #5FC3E4  40%, #ff6e7f  100%);
+  transition: 2s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 0 0 10px #eee;
+  border-radius: 5px;
+  /* Transition  */
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}

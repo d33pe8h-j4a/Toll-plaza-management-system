@@ -1,0 +1,338 @@
+
+
+  
+  
+  
+  
+  /*--------------------------------------------------------------
+  # General
+  --------------------------------------------------------------*/
+  
+
+    
+    p {
+      padding: 0;
+      margin: 0 0 30px 0;
+    }
+  
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 400;
+      margin: 0 0 20px 0;
+      padding: 0;
+    }
+  
+    h1{
+      font-weight: 500;
+      color: var(--color-dark-red-2);
+    }
+  
+    h1,h5{
+      text-align: center;
+    }
+  
+    @-webkit-keyframes animate-preloader {
+      0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+    
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+    
+    @keyframes animate-preloader {
+      0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+    
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+  
+  
+ 
+  
+  /*--------------------------------------------------------------
+  # Sections
+  --------------------------------------------------------------*/
+  
+  /* Sections Header
+  --------------------------------*/
+  
+  .section-header h3 {
+    font-size: 36px;
+    /* color: #283d50; */
+    color: var(--color-dark-red-2);
+    text-align: center;
+    font-weight: 500;
+    position: relative;
+  }
+  
+  .section-header p {
+    text-align: center;
+    margin: auto;
+    font-size: 15px;
+    padding-bottom: 60px;
+    color: #556877;
+    width: 50%;
+  }
+  
+  /* Section with background
+  --------------------------------*/
+  
+  .section-bg {
+    /* background: #ecf5ff; */
+    background: var(--color-service-bg);
+  }
+  
+  /*--------------------------------------------------------------
+    # SERVICES SECTION
+  --------------------------------------------------------------*/
+  
+  #services {
+    padding: 60px 0 40px 0;
+    box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  /*--------------------------------------------------------------
+  # WHY CHOSE US?
+  --------------------------------------------------------------*/
+  
+  #why-us {
+    padding: 60px 0;
+    background: #af6922;
+  }
+  
+  #why-us .section-header h3,
+  #why-us .section-header p {
+    color: #fff;
+  }
+  
+  #why-us .card {
+    background: #ce7e22;
+    border-color: #f3bd86;
+    margin: 0 15px;
+    padding: 15px 0;
+    text-align: center;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+    height: 100%;
+  }
+  
+  #why-us .card:hover {
+    background: var(--color-dark-red-1);
+    border-color: #ffffff;
+  }
+  
+  #why-us .card i {
+    font-size: 48px;
+    padding-top: 15px;
+  }
+  
+  #why-us .card h5 {
+    font-size: 22px;
+    font-weight: 600;
+  }
+  
+  #why-us .card p {
+    font-size: 15px;
+    color: #d8eafe;
+  }
+  
+  #why-us .card .readmore {
+    color: #fff;
+    font-weight: 600;
+    display: inline-block;
+    transition: 0.3s ease-in-out;
+    border-bottom: #00458f solid 2px;
+  }
+  
+  #why-us .card .readmore:hover {
+    border-bottom: #fff solid 2px;
+  }
+  
+  #why-us .counters {
+    padding-top: 40px;
+  }
+  
+  #why-us .counters span {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 48px;
+    display: block;
+    color: #fff;
+  }
+  
+  #why-us .counters p {
+    padding: 0;
+    margin: 0 0 20px 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    color: #cce5ff;
+  }
+  
+  #why-us a{
+    color: #ffc386;
+    text-decoration: underline;
+  }
+  
+  
+ 
+  /*--------------------------------------------------------------
+  # Responsive Media Queries NEWBIZZZZ
+  --------------------------------------------------------------*/
+  
+  @media (min-width: 992px) {
+    #testimonials .testimonial-item p {
+      width: 80%;
+    }
+  }
+  
+  @media (max-width: 991px) {
+    #header {
+      height: 60px;
+      padding: 10px 0;
+    }
+  
+    #header .logo h1 {
+      font-size: 28px;
+      padding: 8px 0;
+    }
+  
+    #intro {
+      padding: 140px 0 60px 0;
+    }
+  
+    #intro .intro-img {
+      width: 80%;
+      float: none;
+      margin: 0 auto 25px auto;
+    }
+  
+    #intro .intro-info {
+      width: 80%;
+      float: none;
+      margin: auto;
+      text-align: center;
+    }
+  
+    #why-us .card {
+      margin: 0;
+    }
+  
+    .slider-content{
+      padding-top: 15vh;
+    }
+  
+    .crsl-txt h1{
+      padding-top: 0;
+    }
+  
+    #services{
+      box-shadow: none;
+    }
+  
+  }
+  
+  @media (max-width: 768px) {
+    .back-to-top {
+      bottom: 15px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    #intro .intro-info {
+      width: 100%;
+    }
+  
+    #intro .intro-info h2 {
+      font-size: 34px;
+      margin-bottom: 30px;
+    }
+  
+    .section-header p {
+      width: 100%;
+    }
+  
+    #testimonials .testimonial-item {
+      text-align: center;
+    }
+  
+    #testimonials .testimonial-item .testimonial-img {
+      float: none;
+      margin: auto;
+    }
+  
+    #testimonials .testimonial-item h3,
+    #testimonials .testimonial-item h4,
+    #testimonials .testimonial-item p {
+      margin-left: 0;
+    }
+  }
+  
+  @media (max-width: 574px) {
+    #intro {
+      padding: 100px 0 20px 0;
+    }
+    .slider-content{
+      padding-top: 12vh;
+    }
+  
+    .head-pad{
+      margin-top: 30px;
+    }
+  }
+
+
+
+
+
+  /*--------------------------------------------------------------
+  # ABOUT US PAGE
+--------------------------------------------------------------*/
+
+.service-icon {
+    border: 3px solid transparent;
+    display: inline-block;
+    height: 85px;
+    width: 85px;
+    line-height: 101px;
+  
+    -webkit-transform: rotate(47deg);
+       -moz-transform: rotate(47deg);
+        -ms-transform: rotate(47deg);
+         -o-transform: rotate(47deg);
+            transform: rotate(47deg);
+  
+    -webkit-transition: all 0.3s ease 0s;
+       -moz-transition: all 0.3s ease 0s;
+        -ms-transition: all 0.3s ease 0s;
+         -o-transition: all 0.3s ease 0s;
+            transition: all 0.3s ease 0s;
+  }
+  
+  
+  .service-icon i {
+    -webkit-transform: rotate(-48deg);
+       -moz-transform: rotate(-48deg);
+        -ms-transform: rotate(-48deg);
+         -o-transform: rotate(-48deg);
+            transform: rotate(-48deg);
+  }
+  
+  .service-item h3 {
+    font-size: 20px;
+    text-transform: uppercase;
+  }

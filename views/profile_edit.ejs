@@ -1,0 +1,132 @@
+<%- include('partials/header'); -%>
+<div class="container">
+    <div class="main-body">
+    
+          <!-- Breadcrumb -->
+          <nav aria-label="breadcrumb" class="main-breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="/">Home</a></li>
+              <li class="breadcrumb-item"><a href="javascript:void(0)">User</a></li>
+              <li class="breadcrumb-item active" aria-current="page">User Profile</li>
+            </ol>
+          </nav>
+          <!-- /Breadcrumb -->
+    
+          <div class="row gutters-sm mt-4 mb-5">
+            <div class="col-lg-3 col-md-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <div class="d-flex flex-column align-items-center text-center">
+                    <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Admin" class="rounded-circle" width="150">
+                    <div class="mt-3">
+                      <h4>Deepesh Jha</h4>
+                      <p class="text-muted font-size-sm">Haringhata farm</p>
+                      <button class="btn btn-primary">Change Photo</button>
+                      <button class="btn btn-outline-primary">Change Address</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-9 col-md-8">
+              <form action="/profile-edit" method="post">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <div class="row gutters">
+                      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <h6 class="mb-2 text-primary">Personal Details</h6>
+                      </div>
+                      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                        <div class="form-group">
+                          <label for="fullName">Full Name</label>
+                          <input type="text" class="form-control" name="fullName" placeholder="Enter full name">
+                        </div>
+                      </div>
+                      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                        <div class="form-group">
+                          <label for="email">Email</label>
+                          <input type="email" class="form-control" name="email" placeholder="Enter email ID">
+                        </div>
+                      </div>
+                      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                        <div class="form-group">
+                          <label for="phone">Phone</label>
+                          <input type="tel" class="form-control" name="phone" placeholder="Enter phone number">
+                        </div>
+                      </div>
+                      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                        <div class="form-group">
+                          <label for="dob">Date of Birth</label>
+                          <input type="date" class="form-control" name="dob" placeholder="Enter Date of Birth">
+                        </div>
+                      </div>
+                      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                        <div class="form-group">
+                          <label for="gender">Gender</label>
+                          <select name="gender" class="form-control">
+                            <option value="">Please select one…</option>
+                            <option value="female">Female</option>
+                            <option value="male">Male</option>
+                            <option value="non-binary">Non-Binary</option>
+                            <option value="other">Other</option>
+                            <option value="Prefer not to answer">Perfer not to Answer</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                        <div class="form-group">
+                          <label for="drivingLicense">Driving License</label>
+                          <input type="text" class="form-control" name="drivingLicense" placeholder="Enter driving license id">
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="row gutters">
+                      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <h6 class="mt-3 mb-2 text-primary">Address</h6>
+                      </div>
+                      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                        <div class="form-group">
+                          <label for="Street">Street</label>
+                          <input type="name" class="form-control" name="street" placeholder="Enter Street">
+                        </div>
+                      </div>
+                      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                        <div class="form-group">
+                          <label for="ciTy">City</label>
+                          <input type="name" class="form-control" name="city" placeholder="Enter City">
+                        </div>
+                      </div>
+                      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                        <div class="form-group">
+                          <label for="sTate">State</label>
+                          <input type="text" class="form-control" name="state" placeholder="Enter State">
+                        </div>
+                      </div>
+                      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                        <div class="form-group">
+                          <label for="zIp">Zip Code</label>
+                          <input type="text" class="form-control" name="zip" placeholder="Zip Code">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row gutters">
+                      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class="text-right">
+                          <button type="submit" name="submit" name="cancel" class="btn btn-secondary" value="cancel"     >Cancel</button>
+                          <button type="submit" name="submit" name="submit" class="btn btn-primary">Update</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+
+
+
+            </div>
+          </div>
+
+        </div>
+    </div>
+    <%- include('partials/footer'); -%>
